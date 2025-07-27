@@ -1,0 +1,1322 @@
+[
+  {
+    "level_name": "ASI_BLOCK_A",
+    "variable_schema": [
+      {
+        "name": "YR",
+        "description": "'23' for ASI 2022-2023",
+        "length": 2,
+        "start_position": 1,
+        "end_position": 2,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "BLK",
+        "description": "Block code, Always 'A'",
+        "length": 2,
+        "start_position": 3,
+        "end_position": 4,
+        "type": "TEXT",
+        "is_common_id": true
+      },
+      {
+        "name": "A1",
+        "description": "DSL",
+        "length": 6,
+        "start_position": 5,
+        "end_position": 10,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "A2",
+        "description": "PSL No.",
+        "length": 5,
+        "start_position": 11,
+        "end_position": 15,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "A3",
+        "description": "Scheme code (Census-1, Sample-2)",
+        "length": 1,
+        "start_position": 16,
+        "end_position": 16,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "A4",
+        "description": "Ind. Code as per Frame (4-digit Class of NIC-2008)",
+        "length": 4,
+        "start_position": 17,
+        "end_position": 20,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "A5",
+        "description": "Ind Code as per Return (5-digit Sub-class of NIC-2008)",
+        "length": 5,
+        "start_position": 21,
+        "end_position": 25,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "A7",
+        "description": "State Code",
+        "length": 2,
+        "start_position": 26,
+        "end_position": 27,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "A8",
+        "description": "District code",
+        "length": 2,
+        "start_position": 28,
+        "end_position": 29,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "A9",
+        "description": "Sector (Rural -1, Urban -2)",
+        "length": 1,
+        "start_position": 30,
+        "end_position": 30,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "A10",
+        "description": "RO/SRO code",
+        "length": 4,
+        "start_position": 31,
+        "end_position": 34,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "A11",
+        "description": "No. of units",
+        "length": 3,
+        "start_position": 35,
+        "end_position": 37,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "A12",
+        "description": "Status of Unit",
+        "length": 2,
+        "start_position": 38,
+        "end_position": 39,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "BONUS",
+        "description": "Bonus (in Rs.)",
+        "length": 14,
+        "start_position": 40,
+        "end_position": 53,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "PF",
+        "description": "Contribution to provident & other funds (in Rs.)",
+        "length": 14,
+        "start_position": 54,
+        "end_position": 67,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "WELFARE",
+        "description": "Workmen & staff welfare expenses (in Rs.)",
+        "length": 14,
+        "start_position": 68,
+        "end_position": 81,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "MWDAYS",
+        "description": "Number of working days (Manufacturing days)",
+        "length": 3,
+        "start_position": 82,
+        "end_position": 84,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "NWDAYS",
+        "description": "Number of working days (Non-Manufacturing days)",
+        "length": 3,
+        "start_position": 85,
+        "end_position": 87,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "WDAYS",
+        "description": "Number of working days (Total)",
+        "length": 3,
+        "start_position": 88,
+        "end_position": 90,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "COSTOP",
+        "description": "Total Cost of Production",
+        "length": 14,
+        "start_position": 91,
+        "end_position": 104,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "EXPSHARE",
+        "description": "Share(%) of products/by-products directly exported",
+        "length": 3,
+        "start_position": 105,
+        "end_position": 107,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "MULT",
+        "description": "Multiplier (in 9999.99999999 format)",
+        "length": 14,
+        "start_position": 108,
+        "end_position": 121,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "FILLER",
+        "description": "Padded with 0 or blank",
+        "length": 85,
+        "start_position": 122,
+        "end_position": 206,
+        "type": "TEXT",
+        "is_common_id": false
+      }
+    ],
+    "common_identifiers": ["BLK"]
+  },
+  {
+    "level_name": "ASI_BLOCK_B",
+    "variable_schema": [
+      {
+        "name": "YR",
+        "description": "'23' for ASI 2022-2023",
+        "length": 2,
+        "start_position": 1,
+        "end_position": 2,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "BLK",
+        "description": "Block code, Always 'B'",
+        "length": 2,
+        "start_position": 3,
+        "end_position": 4,
+        "type": "TEXT",
+        "is_common_id": true
+      },
+      {
+        "name": "AB01",
+        "description": "DSL (Block-A, Item 1)",
+        "length": 6,
+        "start_position": 5,
+        "end_position": 10,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "B02",
+        "description": "Type of organisation(code)",
+        "length": 2,
+        "start_position": 11,
+        "end_position": 12,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "B03",
+        "description": "Corporate Identification Number (CIN)",
+        "length": 21,
+        "start_position": 13,
+        "end_position": 33,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "B04",
+        "description": "Whether the unit has ISO Certification, 14000 Series",
+        "length": 1,
+        "start_position": 34,
+        "end_position": 34,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "B05",
+        "description": "Year of initial production",
+        "length": 4,
+        "start_position": 35,
+        "end_position": 38,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "B06F",
+        "description": "Accounting year (From)",
+        "length": 6,
+        "start_position": 39,
+        "end_position": 44,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "B06T",
+        "description": "Accounting year (To)",
+        "length": 6,
+        "start_position": 45,
+        "end_position": 50,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "B07",
+        "description": "Number of months of operation",
+        "length": 2,
+        "start_position": 51,
+        "end_position": 52,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "B08",
+        "description": "Whether the share capital of the company includes share of foreign entities? (Yes-1, No-2)",
+        "length": 1,
+        "start_position": 53,
+        "end_position": 53,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "B09",
+        "description": "Any R&D unit in your factory? (yes & registered with DST/DBT-1, yes & registered with others-2, no-3)",
+        "length": 1,
+        "start_position": 54,
+        "end_position": 54,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "B11",
+        "description": "Whether the unit offered any formal training (Yes-1, No-2)",
+        "length": 1,
+        "start_position": 55,
+        "end_position": 55,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "FILLER",
+        "description": "Padded with 0 or blank",
+        "length": 151,
+        "start_position": 56,
+        "end_position": 206,
+        "type": "TEXT",
+        "is_common_id": false
+      }
+    ],
+    "common_identifiers": ["BLK"]
+  },
+  {
+    "level_name": "ASI_BLOCK_C",
+    "variable_schema": [
+      {
+        "name": "YR",
+        "description": "'23' for ASI 2022-2023",
+        "length": 2,
+        "start_position": 1,
+        "end_position": 2,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "BLK",
+        "description": "Block code, Always 'C'",
+        "length": 2,
+        "start_position": 3,
+        "end_position": 4,
+        "type": "TEXT",
+        "is_common_id": true
+      },
+      {
+        "name": "AC01",
+        "description": "DSL (Block-A, Item 1)",
+        "length": 6,
+        "start_position": 5,
+        "end_position": 10,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "C_I1",
+        "description": "SL. No. (to be entered as printed in the schedule)",
+        "length": 2,
+        "start_position": 11,
+        "end_position": 12,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "C_I3",
+        "description": "Gross Value Opening as on",
+        "length": 14,
+        "start_position": 13,
+        "end_position": 26,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "C_I4",
+        "description": "Gross Value of Addition due to Revaluation",
+        "length": 14,
+        "start_position": 27,
+        "end_position": 40,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "C_I5",
+        "description": "Gross Value of Actual addition",
+        "length": 14,
+        "start_position": 41,
+        "end_position": 54,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "C_I6",
+        "description": "Gross Value of Deduction & adjustment during the year",
+        "length": 14,
+        "start_position": 55,
+        "end_position": 68,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "C_I7",
+        "description": "Gross Value Closing as on",
+        "length": 14,
+        "start_position": 69,
+        "end_position": 82,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "C_I8",
+        "description": "Depreciation Up to year beginning",
+        "length": 14,
+        "start_position": 83,
+        "end_position": 96,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "C_I9",
+        "description": "Depreciation Provided during the year",
+        "length": 14,
+        "start_position": 97,
+        "end_position": 110,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "C_I10",
+        "description": "Depreciation due to Adjustment for sold/ discarded during the year",
+        "length": 14,
+        "start_position": 111,
+        "end_position": 124,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "C_I11",
+        "description": "Depreciation Up to year end",
+        "length": 14,
+        "start_position": 125,
+        "end_position": 138,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "C_I12",
+        "description": "Net Value Opening as on",
+        "length": 14,
+        "start_position": 139,
+        "end_position": 152,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "C_I13",
+        "description": "Net Value Closing as on",
+        "length": 14,
+        "start_position": 153,
+        "end_position": 166,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "FILLER",
+        "description": "Padded with 0 or blank",
+        "length": 40,
+        "start_position": 167,
+        "end_position": 206,
+        "type": "TEXT",
+        "is_common_id": false
+      }
+    ],
+    "common_identifiers": ["BLK"]
+  },
+  {
+    "level_name": "ASI_BLOCK_D",
+    "variable_schema": [
+      {
+        "name": "YR",
+        "description": "'23' for ASI 2022-2023",
+        "length": 2,
+        "start_position": 1,
+        "end_position": 2,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "BLK",
+        "description": "Block code, Always 'D'",
+        "length": 2,
+        "start_position": 3,
+        "end_position": 4,
+        "type": "TEXT",
+        "is_common_id": true
+      },
+      {
+        "name": "AD01",
+        "description": "DSL (Block-A, Item 1)",
+        "length": 6,
+        "start_position": 5,
+        "end_position": 10,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "D_I1",
+        "description": "SL. No. (to be entered as printed in the schedule)",
+        "length": 2,
+        "start_position": 11,
+        "end_position": 12,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "D_I3",
+        "description": "Opening (Rs.)",
+        "length": 14,
+        "start_position": 13,
+        "end_position": 26,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "D_I4",
+        "description": "Closing (Rs.)",
+        "length": 14,
+        "start_position": 27,
+        "end_position": 40,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "FILLER",
+        "description": "Padded with 0 or blank",
+        "length": 166,
+        "start_position": 41,
+        "end_position": 206,
+        "type": "TEXT",
+        "is_common_id": false
+      }
+    ],
+    "common_identifiers": ["BLK"]
+  },
+  {
+    "level_name": "ASI_BLOCK_E",
+    "variable_schema": [
+      {
+        "name": "YR",
+        "description": "'23' for ASI 2022-2023",
+        "length": 2,
+        "start_position": 1,
+        "end_position": 2,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "BLK",
+        "description": "Block code, Always 'E'",
+        "length": 2,
+        "start_position": 3,
+        "end_position": 4,
+        "type": "TEXT",
+        "is_common_id": true
+      },
+      {
+        "name": "AE01",
+        "description": "DSL (Block-A, Item 1)",
+        "length": 6,
+        "start_position": 5,
+        "end_position": 10,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "E_I1",
+        "description": "SL. No. (to be entered as printed in the schedule)",
+        "length": 2,
+        "start_position": 11,
+        "end_position": 12,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "E_I3",
+        "description": "Mandays Worked (Manufacturing)",
+        "length": 8,
+        "start_position": 13,
+        "end_position": 20,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "E_I4",
+        "description": "Mandays Worked (Non Manufacturing)",
+        "length": 8,
+        "start_position": 21,
+        "end_position": 28,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "E_I5",
+        "description": "Mandays Worked (Total)",
+        "length": 10,
+        "start_position": 29,
+        "end_position": 38,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "E_I6",
+        "description": "Average Number of persons worked",
+        "length": 8,
+        "start_position": 39,
+        "end_position": 46,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "E_I7",
+        "description": "No. of mandays paid for",
+        "length": 10,
+        "start_position": 47,
+        "end_position": 56,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "E_I8",
+        "description": "Wages/salaries (in Rs.)",
+        "length": 14,
+        "start_position": 57,
+        "end_position": 70,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "FILLER",
+        "description": "Padded with 0 or blank",
+        "length": 136,
+        "start_position": 71,
+        "end_position": 206,
+        "type": "TEXT",
+        "is_common_id": false
+      }
+    ],
+    "common_identifiers": ["BLK"]
+  },
+  {
+    "level_name": "ASI_BLOCK_F",
+    "variable_schema": [
+      {
+        "name": "YR",
+        "description": "'23' for ASI 2022-2023",
+        "length": 2,
+        "start_position": 1,
+        "end_position": 2,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "BLK",
+        "description": "Block code, Always 'F'",
+        "length": 2,
+        "start_position": 3,
+        "end_position": 4,
+        "type": "TEXT",
+        "is_common_id": true
+      },
+      {
+        "name": "AF01",
+        "description": "DSL (Block-A, Item 1)",
+        "length": 6,
+        "start_position": 5,
+        "end_position": 10,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "F1",
+        "description": "Work done by others on materials supplied by the industrial undertaking",
+        "length": 14,
+        "start_position": 11,
+        "end_position": 24,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F2A",
+        "description": "Repair & maintenance of Building & Other construction",
+        "length": 14,
+        "start_position": 25,
+        "end_position": 38,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F2B",
+        "description": "Repair & maintenance of Other fixed assets",
+        "length": 14,
+        "start_position": 39,
+        "end_position": 52,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F3",
+        "description": "Operating expenses",
+        "length": 14,
+        "start_position": 53,
+        "end_position": 66,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F4",
+        "description": "Expenses on raw materials and other components for own construction",
+        "length": 14,
+        "start_position": 67,
+        "end_position": 80,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F5",
+        "description": "Insurance Charges",
+        "length": 14,
+        "start_position": 81,
+        "end_position": 94,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F6",
+        "description": "Rent paid for Plant & Machinery and other Fixed assets",
+        "length": 14,
+        "start_position": 95,
+        "end_position": 108,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F7",
+        "description": "Expenses on Research & Development (R&D)",
+        "length": 14,
+        "start_position": 109,
+        "end_position": 122,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F8",
+        "description": "Rent paid for Buildings",
+        "length": 14,
+        "start_position": 123,
+        "end_position": 136,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F9",
+        "description": "Rent paid for land on lease or royalties on mines, quarries and similar assets",
+        "length": 14,
+        "start_position": 137,
+        "end_position": 150,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F10",
+        "description": "Interest paid",
+        "length": 14,
+        "start_position": 151,
+        "end_position": 164,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F11",
+        "description": "Purchase value of goods sold in the same condition as purchased",
+        "length": 14,
+        "start_position": 165,
+        "end_position": 178,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F12",
+        "description": "Inward transportation cost",
+        "length": 14,
+        "start_position": 179,
+        "end_position": 192,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "F13",
+        "description": "Outward transportation cost",
+        "length": 14,
+        "start_position": 193,
+        "end_position": 206,
+        "type": "NUMERIC",
+        "is_common_id": false
+      }
+    ],
+    "common_identifiers": ["BLK"]
+  },
+  {
+    "level_name": "ASI_BLOCK_G",
+    "variable_schema": [
+      {
+        "name": "YR",
+        "description": "'23' for ASI 2022-2023",
+        "length": 2,
+        "start_position": 1,
+        "end_position": 2,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "BLK",
+        "description": "Block code, Always 'G'",
+        "length": 2,
+        "start_position": 3,
+        "end_position": 4,
+        "type": "TEXT",
+        "is_common_id": true
+      },
+      {
+        "name": "AG01",
+        "description": "DSL (Block-A, Item 1)",
+        "length": 6,
+        "start_position": 5,
+        "end_position": 10,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "G1",
+        "description": "Receipts from manufacturing services (including work done for others on materials supplied by them and sale value of waste left by the party)",
+        "length": 14,
+        "start_position": 11,
+        "end_position": 24,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "G2",
+        "description": "Receipts from non-manufacturing services (including non-industrial services)",
+        "length": 14,
+        "start_position": 25,
+        "end_position": 38,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "G3",
+        "description": "Value in electricity generated and sold.",
+        "length": 14,
+        "start_position": 39,
+        "end_position": 52,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "G4",
+        "description": "Value of own construction",
+        "length": 14,
+        "start_position": 53,
+        "end_position": 66,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "G5",
+        "description": "Net balance of goods sold in the same condition as purchased",
+        "length": 14,
+        "start_position": 67,
+        "end_position": 80,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "G6",
+        "description": "Rent received for Plant & Machinery and other fixed assets",
+        "length": 14,
+        "start_position": 81,
+        "end_position": 94,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "G7",
+        "description": "Variation in stock of semi-finished goods",
+        "length": 14,
+        "start_position": 95,
+        "end_position": 108,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "G8",
+        "description": "Rent received for buildings",
+        "length": 14,
+        "start_position": 109,
+        "end_position": 122,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "G9",
+        "description": "Rent received for land on lease or royalties on mines, quarries and similar assets",
+        "length": 14,
+        "start_position": 123,
+        "end_position": 136,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "G10",
+        "description": "Interest received",
+        "length": 14,
+        "start_position": 137,
+        "end_position": 150,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "G11",
+        "description": "Sale value of goods sold in the same condition as purchased",
+        "length": 14,
+        "start_position": 151,
+        "end_position": 164,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "G12",
+        "description": "Other production subsidies",
+        "length": 14,
+        "start_position": 165,
+        "end_position": 178,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "FILLER",
+        "description": "Padded with 0 or blank",
+        "length": 28,
+        "start_position": 179,
+        "end_position": 206,
+        "type": "TEXT",
+        "is_common_id": false
+      }
+    ],
+    "common_identifiers": ["BLK"]
+  },
+  {
+    "level_name": "ASI_BLOCK_H",
+    "variable_schema": [
+      {
+        "name": "YR",
+        "description": "'23' for ASI 2022-2023",
+        "length": 2,
+        "start_position": 1,
+        "end_position": 2,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "BLK",
+        "description": "Block code, Always 'H'",
+        "length": 2,
+        "start_position": 3,
+        "end_position": 4,
+        "type": "TEXT",
+        "is_common_id": true
+      },
+      {
+        "name": "AH01",
+        "description": "DSL (Block-A, Item 1)",
+        "length": 6,
+        "start_position": 5,
+        "end_position": 10,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "H_I1",
+        "description": "SL. No. (to be entered as printed in the schedule)",
+        "length": 3,
+        "start_position": 11,
+        "end_position": 13,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "H_I3",
+        "description": "Item code (NPCMS)",
+        "length": 7,
+        "start_position": 14,
+        "end_position": 20,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "H_I4",
+        "description": "Unit of quantity (code)",
+        "length": 3,
+        "start_position": 21,
+        "end_position": 23,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "H_I5",
+        "description": "Quantity consumed (99999999999.99)",
+        "length": 14,
+        "start_position": 24,
+        "end_position": 37,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "H_I6",
+        "description": "Purchase value (in Rs.)",
+        "length": 14,
+        "start_position": 38,
+        "end_position": 51,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "H_I7",
+        "description": "Rate per unit (in Rs.) (99999999999.99)",
+        "length": 14,
+        "start_position": 52,
+        "end_position": 65,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "FILLER",
+        "description": "Padded with 0 or blank",
+        "length": 141,
+        "start_position": 66,
+        "end_position": 206,
+        "type": "TEXT",
+        "is_common_id": false
+      }
+    ],
+    "common_identifiers": ["BLK"]
+  },
+  {
+    "level_name": "ASI_BLOCK_I",
+    "variable_schema": [
+      {
+        "name": "YR",
+        "description": "'23' for ASI 2022-2023",
+        "length": 2,
+        "start_position": 1,
+        "end_position": 2,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "BLK",
+        "description": "Block code, Always 'I'",
+        "length": 2,
+        "start_position": 3,
+        "end_position": 4,
+        "type": "TEXT",
+        "is_common_id": true
+      },
+      {
+        "name": "AI01",
+        "description": "DSL (Block-A, Item 1)",
+        "length": 6,
+        "start_position": 5,
+        "end_position": 10,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "I_I1",
+        "description": "SL. No. (to be entered as printed in the schedule)",
+        "length": 2,
+        "start_position": 11,
+        "end_position": 12,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "I_I3",
+        "description": "Item code (NPCMS)",
+        "length": 7,
+        "start_position": 13,
+        "end_position": 19,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "I_I4",
+        "description": "Unit of quantity (code)",
+        "length": 3,
+        "start_position": 20,
+        "end_position": 22,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "I_I5",
+        "description": "Quantity consumed (99999999999.99)",
+        "length": 14,
+        "start_position": 23,
+        "end_position": 36,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "I_I6",
+        "description": "Purchase value (in Rs.)",
+        "length": 14,
+        "start_position": 37,
+        "end_position": 50,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "I_I7",
+        "description": "Rate per unit (in Rs.) (99999999999.99)",
+        "length": 14,
+        "start_position": 51,
+        "end_position": 64,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "FILLER",
+        "description": "Padded with 0 or blank",
+        "length": 142,
+        "start_position": 65,
+        "end_position": 206,
+        "type": "TEXT",
+        "is_common_id": false
+      }
+    ],
+    "common_identifiers": ["BLK"]
+  },
+  {
+    "level_name": "ASI_BLOCK_J",
+    "variable_schema": [
+      {
+        "name": "YR",
+        "description": "'23' for ASI 2022-2023",
+        "length": 2,
+        "start_position": 1,
+        "end_position": 2,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "BLK",
+        "description": "Block code, Always 'J'",
+        "length": 2,
+        "start_position": 3,
+        "end_position": 4,
+        "type": "TEXT",
+        "is_common_id": true
+      },
+      {
+        "name": "AJ01",
+        "description": "DSL (Block-A, Item 1)",
+        "length": 6,
+        "start_position": 5,
+        "end_position": 10,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "J_I1",
+        "description": "SL. No. (to be entered as printed in the schedule)",
+        "length": 3,
+        "start_position": 11,
+        "end_position": 13,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "J_I3",
+        "description": "Item code (NPCMS)",
+        "length": 7,
+        "start_position": 14,
+        "end_position": 20,
+        "type": "TEXT",
+        "is_common_id": false
+      },
+      {
+        "name": "J_I4",
+        "description": "Unit of quantity (code)",
+        "length": 2,
+        "start_position": 21,
+        "end_position": 22,
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "J_I5",
+        "description": "Quantity manufactured (99999999999.99)",
+        "length": 14,
+        "start_position": 23,
+        "end_position": 36,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "J_I6",
+        "description": "Quantity sold (99999999999.99)",
+        "length": 14,
+        "start_position": 37,
+        "end_position": 50,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "J_I7",
+        "description": "Gross sale value (Rs.)",
+        "length": 14,
+        "start_position": 51,
+        "end_position": 64,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "J_I8",
+        "description": "Goods and Services Tax (GST) (Rs.)",
+        "length": 14,
+        "start_position": 65,
+        "end_position": 78,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "J_I9",
+        "description": "Excise Duty/ Sales Tax/VAT/ Other Taxes, if any (Rs.)",
+        "length": 14,
+        "start_position": 79,
+        "end_position": 92,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "J_I10",
+        "description": "Others (Rs.)",
+        "length": 14,
+        "start_position": 93,
+        "end_position": 106,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "J_I11",
+        "description": "Subsidy (Rs.)",
+        "length": 14,
+        "start_position": 107,
+        "end_position": 120,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "J_I12",
+        "description": "Per unit net sale value (Rs.) (99999999999.99)",
+        "length": 14,
+        "start_position": 121,
+        "end_position": 134,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "J_I13",
+        "description": "Ex-factory value of quantity manufactured (Rs.)",
+        "length": 14,
+        "start_position": 135,
+        "end_position": 148,
+        "type": "NUMERIC",
+        "is_common_id": false
+      },
+      {
+        "name": "FILLER",
+        "description": "Padded with 0 or blank",
+        "length": 58,
+        "start_position": 149,
+        "end_position": 206,
+        "type": "TEXT",
+        "is_common_id": false
+      }
+    ],
+    "common_identifiers": ["BLK"]
+  }
+]
