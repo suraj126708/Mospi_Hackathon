@@ -125,7 +125,7 @@
         "length": 14,
         "start_position": 40,
         "end_position": 53,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -134,7 +134,7 @@
         "length": 14,
         "start_position": 54,
         "end_position": 67,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -143,12 +143,12 @@
         "length": 14,
         "start_position": 68,
         "end_position": 81,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
         "name": "MWDAYS",
-        "description": "Number of working days (Manufacturing days)",
+        "description": "Number of working days ( Manufacturing days)",
         "length": 3,
         "start_position": 82,
         "end_position": 84,
@@ -166,7 +166,7 @@
       },
       {
         "name": "WDAYS",
-        "description": "Number of working days (Total)",
+        "description": "Number of working days ( Total)",
         "length": 3,
         "start_position": 88,
         "end_position": 90,
@@ -179,7 +179,7 @@
         "length": 14,
         "start_position": 91,
         "end_position": 104,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -188,7 +188,7 @@
         "length": 3,
         "start_position": 105,
         "end_position": 107,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -197,7 +197,7 @@
         "length": 14,
         "start_position": 108,
         "end_position": 121,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -210,7 +210,9 @@
         "is_common_id": false
       }
     ],
-    "common_identifiers": ["BLK"]
+    "common_identifiers": [
+      "BLK"
+    ]
   },
   {
     "level_name": "ASI_BLOCK_B",
@@ -342,7 +344,9 @@
         "is_common_id": false
       }
     ],
-    "common_identifiers": ["BLK"]
+    "common_identifiers": [
+      "BLK"
+    ]
   },
   {
     "level_name": "ASI_BLOCK_C",
@@ -389,7 +393,7 @@
         "length": 14,
         "start_position": 13,
         "end_position": 26,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -398,7 +402,7 @@
         "length": 14,
         "start_position": 27,
         "end_position": 40,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -407,7 +411,7 @@
         "length": 14,
         "start_position": 41,
         "end_position": 54,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -416,7 +420,7 @@
         "length": 14,
         "start_position": 55,
         "end_position": 68,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -425,7 +429,7 @@
         "length": 14,
         "start_position": 69,
         "end_position": 82,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -434,7 +438,7 @@
         "length": 14,
         "start_position": 83,
         "end_position": 96,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -443,7 +447,7 @@
         "length": 14,
         "start_position": 97,
         "end_position": 110,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -452,7 +456,7 @@
         "length": 14,
         "start_position": 111,
         "end_position": 124,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -461,7 +465,7 @@
         "length": 14,
         "start_position": 125,
         "end_position": 138,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -470,7 +474,7 @@
         "length": 14,
         "start_position": 139,
         "end_position": 152,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -479,7 +483,7 @@
         "length": 14,
         "start_position": 153,
         "end_position": 166,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -492,7 +496,9 @@
         "is_common_id": false
       }
     ],
-    "common_identifiers": ["BLK"]
+    "common_identifiers": [
+      "BLK"
+    ]
   },
   {
     "level_name": "ASI_BLOCK_D",
@@ -539,7 +545,7 @@
         "length": 14,
         "start_position": 13,
         "end_position": 26,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -548,7 +554,7 @@
         "length": 14,
         "start_position": 27,
         "end_position": 40,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -561,26 +567,19 @@
         "is_common_id": false
       }
     ],
-    "common_identifiers": ["BLK"]
+    "common_identifiers": [
+      "BLK"
+    ]
   },
   {
     "level_name": "ASI_BLOCK_E",
     "variable_schema": [
       {
-        "name": "YR",
-        "description": "'23' for ASI 2022-2023",
-        "length": 2,
-        "start_position": 1,
-        "end_position": 2,
-        "type": "TEXT",
-        "is_common_id": false
-      },
-      {
         "name": "BLK",
         "description": "Block code, Always 'E'",
         "length": 2,
-        "start_position": 3,
-        "end_position": 4,
+        "start_position": 1,
+        "end_position": 2,
         "type": "TEXT",
         "is_common_id": true
       },
@@ -588,8 +587,8 @@
         "name": "AE01",
         "description": "DSL (Block-A, Item 1)",
         "length": 6,
-        "start_position": 5,
-        "end_position": 10,
+        "start_position": 3,
+        "end_position": 8,
         "type": "TEXT",
         "is_common_id": false
       },
@@ -597,8 +596,8 @@
         "name": "E_I1",
         "description": "SL. No. (to be entered as printed in the schedule)",
         "length": 2,
-        "start_position": 11,
-        "end_position": 12,
+        "start_position": 9,
+        "end_position": 10,
         "type": "INTEGER",
         "is_common_id": false
       },
@@ -606,67 +605,69 @@
         "name": "E_I3",
         "description": "Mandays Worked (Manufacturing)",
         "length": 8,
-        "start_position": 13,
-        "end_position": 20,
-        "type": "NUMERIC",
+        "start_position": 11,
+        "end_position": 18,
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
         "name": "E_I4",
         "description": "Mandays Worked (Non Manufacturing)",
         "length": 8,
-        "start_position": 21,
-        "end_position": 28,
-        "type": "NUMERIC",
+        "start_position": 19,
+        "end_position": 26,
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
         "name": "E_I5",
         "description": "Mandays Worked (Total)",
         "length": 10,
-        "start_position": 29,
-        "end_position": 38,
-        "type": "NUMERIC",
+        "start_position": 27,
+        "end_position": 36,
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
         "name": "E_I6",
         "description": "Average Number of persons worked",
         "length": 8,
-        "start_position": 39,
-        "end_position": 46,
-        "type": "NUMERIC",
+        "start_position": 37,
+        "end_position": 44,
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
         "name": "E_I7",
         "description": "No. of mandays paid for",
         "length": 10,
-        "start_position": 47,
-        "end_position": 56,
-        "type": "NUMERIC",
+        "start_position": 45,
+        "end_position": 54,
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
         "name": "E_I8",
         "description": "Wages/salaries (in Rs.)",
         "length": 14,
-        "start_position": 57,
-        "end_position": 70,
-        "type": "NUMERIC",
+        "start_position": 55,
+        "end_position": 68,
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
         "name": "FILLER",
         "description": "Padded with 0 or blank",
         "length": 136,
-        "start_position": 71,
-        "end_position": 206,
+        "start_position": 69,
+        "end_position": 204,
         "type": "TEXT",
         "is_common_id": false
       }
     ],
-    "common_identifiers": ["BLK"]
+    "common_identifiers": [
+      "BLK"
+    ]
   },
   {
     "level_name": "ASI_BLOCK_F",
@@ -704,7 +705,7 @@
         "length": 14,
         "start_position": 11,
         "end_position": 24,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -713,7 +714,7 @@
         "length": 14,
         "start_position": 25,
         "end_position": 38,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -722,7 +723,7 @@
         "length": 14,
         "start_position": 39,
         "end_position": 52,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -731,7 +732,7 @@
         "length": 14,
         "start_position": 53,
         "end_position": 66,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -740,7 +741,7 @@
         "length": 14,
         "start_position": 67,
         "end_position": 80,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -749,7 +750,7 @@
         "length": 14,
         "start_position": 81,
         "end_position": 94,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -758,7 +759,7 @@
         "length": 14,
         "start_position": 95,
         "end_position": 108,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -767,7 +768,7 @@
         "length": 14,
         "start_position": 109,
         "end_position": 122,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -776,7 +777,7 @@
         "length": 14,
         "start_position": 123,
         "end_position": 136,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -785,7 +786,7 @@
         "length": 14,
         "start_position": 137,
         "end_position": 150,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -794,7 +795,7 @@
         "length": 14,
         "start_position": 151,
         "end_position": 164,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -803,7 +804,7 @@
         "length": 14,
         "start_position": 165,
         "end_position": 178,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -812,7 +813,7 @@
         "length": 14,
         "start_position": 179,
         "end_position": 192,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -821,11 +822,22 @@
         "length": 14,
         "start_position": 193,
         "end_position": 206,
-        "type": "NUMERIC",
+        "type": "INTEGER",
+        "is_common_id": false
+      },
+      {
+        "name": "FILLER",
+        "description": "Padded with 0 or blank",
+        "length": 0,
+        "start_position": 207,
+        "end_position": 207,
+        "type": "TEXT",
         "is_common_id": false
       }
     ],
-    "common_identifiers": ["BLK"]
+    "common_identifiers": [
+      "BLK"
+    ]
   },
   {
     "level_name": "ASI_BLOCK_G",
@@ -863,7 +875,7 @@
         "length": 14,
         "start_position": 11,
         "end_position": 24,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -872,7 +884,7 @@
         "length": 14,
         "start_position": 25,
         "end_position": 38,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -881,7 +893,7 @@
         "length": 14,
         "start_position": 39,
         "end_position": 52,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -890,7 +902,7 @@
         "length": 14,
         "start_position": 53,
         "end_position": 66,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -899,7 +911,7 @@
         "length": 14,
         "start_position": 67,
         "end_position": 80,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -908,7 +920,7 @@
         "length": 14,
         "start_position": 81,
         "end_position": 94,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -917,7 +929,7 @@
         "length": 14,
         "start_position": 95,
         "end_position": 108,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -926,7 +938,7 @@
         "length": 14,
         "start_position": 109,
         "end_position": 122,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -935,7 +947,7 @@
         "length": 14,
         "start_position": 123,
         "end_position": 136,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -944,7 +956,7 @@
         "length": 14,
         "start_position": 137,
         "end_position": 150,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -953,7 +965,7 @@
         "length": 14,
         "start_position": 151,
         "end_position": 164,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -962,7 +974,7 @@
         "length": 14,
         "start_position": 165,
         "end_position": 178,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -975,7 +987,9 @@
         "is_common_id": false
       }
     ],
-    "common_identifiers": ["BLK"]
+    "common_identifiers": [
+      "BLK"
+    ]
   },
   {
     "level_name": "ASI_BLOCK_H",
@@ -1040,7 +1054,7 @@
         "length": 14,
         "start_position": 24,
         "end_position": 37,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1049,7 +1063,7 @@
         "length": 14,
         "start_position": 38,
         "end_position": 51,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1058,7 +1072,7 @@
         "length": 14,
         "start_position": 52,
         "end_position": 65,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1071,7 +1085,9 @@
         "is_common_id": false
       }
     ],
-    "common_identifiers": ["BLK"]
+    "common_identifiers": [
+      "BLK"
+    ]
   },
   {
     "level_name": "ASI_BLOCK_I",
@@ -1136,7 +1152,7 @@
         "length": 14,
         "start_position": 23,
         "end_position": 36,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1145,7 +1161,7 @@
         "length": 14,
         "start_position": 37,
         "end_position": 50,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1154,7 +1170,7 @@
         "length": 14,
         "start_position": 51,
         "end_position": 64,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1167,7 +1183,9 @@
         "is_common_id": false
       }
     ],
-    "common_identifiers": ["BLK"]
+    "common_identifiers": [
+      "BLK"
+    ]
   },
   {
     "level_name": "ASI_BLOCK_J",
@@ -1232,7 +1250,7 @@
         "length": 14,
         "start_position": 23,
         "end_position": 36,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1241,7 +1259,7 @@
         "length": 14,
         "start_position": 37,
         "end_position": 50,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1250,7 +1268,7 @@
         "length": 14,
         "start_position": 51,
         "end_position": 64,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1259,7 +1277,7 @@
         "length": 14,
         "start_position": 65,
         "end_position": 78,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1268,7 +1286,7 @@
         "length": 14,
         "start_position": 79,
         "end_position": 92,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1277,7 +1295,7 @@
         "length": 14,
         "start_position": 93,
         "end_position": 106,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1286,7 +1304,7 @@
         "length": 14,
         "start_position": 107,
         "end_position": 120,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1295,7 +1313,7 @@
         "length": 14,
         "start_position": 121,
         "end_position": 134,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1304,7 +1322,7 @@
         "length": 14,
         "start_position": 135,
         "end_position": 148,
-        "type": "NUMERIC",
+        "type": "INTEGER",
         "is_common_id": false
       },
       {
@@ -1317,6 +1335,8 @@
         "is_common_id": false
       }
     ],
-    "common_identifiers": ["BLK"]
+    "common_identifiers": [
+      "BLK"
+    ]
   }
 ]
