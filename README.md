@@ -1,3 +1,9 @@
+### 🎥 Demo Video and images
+
+-   **Video and images of Demo:** [Link to a video demonstrating the API in action]
+
+*** 
+
 ### Automated Data Dissemination Gateway for MoSPI Microdata
 
 ### 💡 Project Overview
@@ -8,7 +14,7 @@ This project proposes and details a solution for building an **Automated Data Di
 
 MoSPI's current system for data dissemination is challenged by a lack of a unified, searchable platform. The data is heterogeneous, with each of the 170+ surveys having a unique structure, requiring manual file downloads and complex processing. This leads to slow "time-to-insight" for researchers and policymakers and creates a barrier to equitable data access. The solution must address these issues while strictly adhering to data privacy and security policies.
 
-***
+
 
 ### 🚀 Proposed Solution
 
@@ -76,8 +82,3 @@ This is the front-facing component that handles all user requests.
     -   EurostatAPI.jl Documentation (demonstrates programmatic access to European official statistics): [https://ribo.pages.nilu.no/EurostatAPI.jl](https://ribo.pages.nilu.no/EurostatAPI.jl)
 
 ***
-
-### 🎥 Demo & Further Reading
-
--   **Video Demo:** [Link to a video demonstrating the API in action]
--   **Project Documentation:** [Link to a more detailed project document, if available]
