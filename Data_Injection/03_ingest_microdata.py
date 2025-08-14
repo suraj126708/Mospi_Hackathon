@@ -14,8 +14,11 @@ DB_PASSWORD = "Suraj@#6708"
 MICRODATA_CSV_DIR = './hces_microdata_csvs'
 
 # --- CRITICAL MAPPING: CSV Filenames to Database Level Names ---
+# This will map any CSV file to ASI_BLOCK_C for now
+# You can customize this mapping based on your specific file naming convention
 CSV_FILE_TO_DB_LEVEL_NAME = {
-    'blkC202223.CSV': 'ASI_BLOCK_C',
+    # Default mapping for any CSV file
+    'default': 'ASI_BLOCK_C',
 }
 
 # --- Optional: Header Row Mapping per CSV File ---
@@ -77,7 +80,11 @@ def ingest_microdata_from_csv(csv_dir_path: str):
             full_csv_path = os.path.join(csv_dir_path, csv_filename)
 
             # Map CSV filename to the corresponding database level name
+            # Try to find specific mapping, otherwise use default
             db_level_name = CSV_FILE_TO_DB_LEVEL_NAME.get(csv_filename)
+            if not db_level_name:
+                db_level_name = CSV_FILE_TO_DB_LEVEL_NAME.get('default')
+                print(f"Using default mapping for '{csv_filename}' -> '{db_level_name}'")
 
             if not db_level_name:
                 print(f"Error: No database level name mapping found for CSV file '{csv_filename}'. Exiting.")
