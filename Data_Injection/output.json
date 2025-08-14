@@ -1,0 +1,1278 @@
+{
+    "BLOCK-A": {
+        "description": "IDENTIFICATION BLOCK FOR OFFICIAL USE",
+        "record_identification_key": "A1X BLK",
+        "fields": [
+            {
+                "srl_no": "BLOCK-A (IDENTIFICATION BLOCK FOR OFFICIAL USE)",
+                "field_name": "",
+                "schedule_reference": "",
+                "description": "",
+                "type": "",
+                "width": ""
+            },
+            {
+                "srl_no": "Srl.No.",
+                "field_name": "Field Name",
+                "schedule_reference": "Sch. Ref.",
+                "description": "Description",
+                "type": "Type",
+                "width": "Width"
+            },
+            {
+                "srl_no": "1",
+                "field_name": "YR",
+                "schedule_reference": "-",
+                "description": "'23' for ASI 2022-2023",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "2",
+                "field_name": "BLK",
+                "schedule_reference": "-",
+                "description": "Block code, Always 'A'",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "3",
+                "field_name": "A1",
+                "schedule_reference": "Item 1",
+                "description": "DSL",
+                "type": "Character",
+                "width": "6"
+            },
+            {
+                "srl_no": "4",
+                "field_name": "A2",
+                "schedule_reference": "Item 2",
+                "description": "PSL No.",
+                "type": "Character",
+                "width": "5"
+            },
+            {
+                "srl_no": "5",
+                "field_name": "A3",
+                "schedule_reference": "Item 3",
+                "description": "Scheme code (Census-1, Sample-2)",
+                "type": "Numeric",
+                "width": "1"
+            },
+            {
+                "srl_no": "6",
+                "field_name": "A4",
+                "schedule_reference": "Item4",
+                "description": "Ind. Code as per Frame (4-digit Class of NIC-2008)",
+                "type": "Character",
+                "width": "4"
+            },
+            {
+                "srl_no": "7",
+                "field_name": "A5",
+                "schedule_reference": "Item 5",
+                "description": "Ind Code as per Return (5-digit Sub-class of NIC-2008)",
+                "type": "Character",
+                "width": "5"
+            },
+            {
+                "srl_no": "8",
+                "field_name": "A7",
+                "schedule_reference": "Item 7",
+                "description": "State Code",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "9",
+                "field_name": "A8",
+                "schedule_reference": "Item 8",
+                "description": "District code",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "10",
+                "field_name": "A9",
+                "schedule_reference": "Item 9",
+                "description": "Sector (Rural -1, Urban -2)",
+                "type": "Numeric",
+                "width": "1"
+            },
+            {
+                "srl_no": "11",
+                "field_name": "A10",
+                "schedule_reference": "Item 10",
+                "description": "RO/SRO code",
+                "type": "Character",
+                "width": "4"
+            },
+            {
+                "srl_no": "12",
+                "field_name": "A11",
+                "schedule_reference": "Item 11",
+                "description": "No. of units",
+                "type": "Numeric",
+                "width": "3"
+            },
+            {
+                "srl_no": "13",
+                "field_name": "A12",
+                "schedule_reference": "Item 12",
+                "description": "Status of Unit",
+                "type": "Numeric",
+                "width": "2"
+            },
+            {
+                "srl_no": "14",
+                "field_name": "BONUS",
+                "schedule_reference": "E Blk item 10",
+                "description": "Bonus (in Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "15",
+                "field_name": "PF",
+                "schedule_reference": "E Blk item 11",
+                "description": "Contribution to provident & other funds (in Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "16",
+                "field_name": "WELFARE",
+                "schedule_reference": "E Blk item 12",
+                "description": "Workmen & staff welfare expenses (in Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "17",
+                "field_name": "MWDAYS",
+                "schedule_reference": "E Blk item 13(i)",
+                "description": "Number of working days ( Manufacturing days)",
+                "type": "Numeric",
+                "width": "3"
+            },
+            {
+                "srl_no": "18",
+                "field_name": "NWDAYS",
+                "schedule_reference": "E Blk item 13(ii)",
+                "description": "Number of working days (Non-Manufacturing days)",
+                "type": "Numeric",
+                "width": "3"
+            },
+            {
+                "srl_no": "19",
+                "field_name": "WDAYS",
+                "schedule_reference": "E Blk item 13(iii)",
+                "description": "Number of working days ( Total)",
+                "type": "Numeric",
+                "width": "3"
+            },
+            {
+                "srl_no": "20",
+                "field_name": "COSTOP",
+                "schedule_reference": "E Blk item 14",
+                "description": "Total Cost of Production",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "21",
+                "field_name": "EXPSHARE",
+                "schedule_reference": "J Blk Item 13",
+                "description": "Share(%) of products/by-products directly exported",
+                "type": "Numeric",
+                "width": "3"
+            },
+            {
+                "srl_no": "22",
+                "field_name": "MULT",
+                "schedule_reference": "-",
+                "description": "Multiplier (in 9999.99999999 format)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "23",
+                "field_name": "FILLER",
+                "schedule_reference": "-",
+                "description": "Padded with 0 or blank",
+                "type": "",
+                "width": "85"
+            },
+            {
+                "srl_no": "",
+                "field_name": "TOTAL",
+                "schedule_reference": "",
+                "description": "",
+                "type": "",
+                "width": "206"
+            }
+        ]
+    },
+    "BLOCK-B": {
+        "description": "TO BE FILLED BY OWNERS",
+        "record_identification_key": "AB01 X BLK",
+        "fields": [
+            {
+                "srl_no": "1",
+                "field_name": "YR",
+                "schedule_reference": "-",
+                "description": "'23' for ASI 2022-2023",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "2",
+                "field_name": "BLK",
+                "schedule_reference": "-",
+                "description": "Block code, Always 'B'",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "3",
+                "field_name": "AB01",
+                "schedule_reference": "-",
+                "description": "DSL (Block-A, Item 1)",
+                "type": "Character",
+                "width": "6"
+            },
+            {
+                "srl_no": "4",
+                "field_name": "B02",
+                "schedule_reference": "Item 2",
+                "description": "Type of organisation(code)",
+                "type": "Numeric",
+                "width": "2"
+            },
+            {
+                "srl_no": "5",
+                "field_name": "B03",
+                "schedule_reference": "Item 3",
+                "description": "Corporate Identification Number (CIN)",
+                "type": "Character",
+                "width": "21"
+            },
+            {
+                "srl_no": "6",
+                "field_name": "B04",
+                "schedule_reference": "Item 4",
+                "description": "Whether the unit has ISO Certification, 14000 Series",
+                "type": "Numeric",
+                "width": "1"
+            },
+            {
+                "srl_no": "7",
+                "field_name": "B05",
+                "schedule_reference": "Item 5",
+                "description": "Year of initial production",
+                "type": "Numeric",
+                "width": "4"
+            },
+            {
+                "srl_no": "8",
+                "field_name": "B06F",
+                "schedule_reference": "Item 6",
+                "description": "Accounting year (From)",
+                "type": "Numeric",
+                "width": "6"
+            },
+            {
+                "srl_no": "9",
+                "field_name": "B06T",
+                "schedule_reference": "Item 6",
+                "description": "Accounting year (To)",
+                "type": "Numeric",
+                "width": "6"
+            },
+            {
+                "srl_no": "10",
+                "field_name": "B07",
+                "schedule_reference": "Item7",
+                "description": "Number of months of operation",
+                "type": "Numeric",
+                "width": "2"
+            },
+            {
+                "srl_no": "11",
+                "field_name": "B08",
+                "schedule_reference": "Item8",
+                "description": "Whether the share capital of the company includes share of foreign entities? (Yes-1, No-2)",
+                "type": "Numeric",
+                "width": "1"
+            },
+            {
+                "srl_no": "12",
+                "field_name": "B09",
+                "schedule_reference": "item 9",
+                "description": "Any R&D unit in your factory? (yes & registered with DST/DBT-1, yes & registered with others-2, no-3)",
+                "type": "Numeric",
+                "width": "1"
+            },
+            {
+                "srl_no": "13",
+                "field_name": "B11",
+                "schedule_reference": "item11",
+                "description": "Whether the unit offered any formal training (Yes-1, No-2)",
+                "type": "Numeric",
+                "width": "1"
+            },
+            {
+                "srl_no": "15",
+                "field_name": "FILLER",
+                "schedule_reference": "-",
+                "description": "Padded with 0 or blank",
+                "type": "",
+                "width": "151"
+            },
+            {
+                "srl_no": "",
+                "field_name": "TOTAL",
+                "schedule_reference": "",
+                "description": "",
+                "type": "",
+                "width": "206"
+            }
+        ]
+    },
+    "BLOCK-C": {
+        "description": "FIXED ASSETS",
+        "record_identification_key": "AC01 X BLK X C_I1",
+        "fields": [
+            {
+                "srl_no": "1",
+                "field_name": "YR",
+                "schedule_reference": "-",
+                "description": "'23' for ASI 2022-2023",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "2",
+                "field_name": "BLK",
+                "schedule_reference": "-",
+                "description": "Block code, Always 'C'",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "3",
+                "field_name": "AC01",
+                "schedule_reference": "-",
+                "description": "DSL (Block-A, Item 1)",
+                "type": "Character",
+                "width": "6"
+            },
+            {
+                "srl_no": "4",
+                "field_name": "C_I1",
+                "schedule_reference": "Col. 1",
+                "description": "SL. No. (to be entered as printed in the schedule)",
+                "type": "Numeric",
+                "width": "2"
+            },
+            {
+                "srl_no": "5",
+                "field_name": "C_I3",
+                "schedule_reference": "Col. 3",
+                "description": "Gross Value Opening as on",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "6",
+                "field_name": "C_I4",
+                "schedule_reference": "Col. 4",
+                "description": "Gross Value of Addition due to Revaluation",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "7",
+                "field_name": "C_I5",
+                "schedule_reference": "Col. 5",
+                "description": "Gross Value of Actual addition",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "8",
+                "field_name": "C_I6",
+                "schedule_reference": "Col. 6",
+                "description": "Gross Value of Deduction & adjustment during the year",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "9",
+                "field_name": "C_I7",
+                "schedule_reference": "Col. 7",
+                "description": "Gross Value Closing as on",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "10",
+                "field_name": "C_I8",
+                "schedule_reference": "Col. 8",
+                "description": "Depreciation Up to year beginning",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "11",
+                "field_name": "C_I9",
+                "schedule_reference": "Col. 9",
+                "description": "Depreciation Provided during the year",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "12",
+                "field_name": "C_I10",
+                "schedule_reference": "Col. 10",
+                "description": "Depreciation due to Adjustment for sold/ discarded during the year",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "13",
+                "field_name": "C_I11",
+                "schedule_reference": "Col. 11",
+                "description": "Depreciation Up to year end",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "14",
+                "field_name": "C_I12",
+                "schedule_reference": "Col. 12",
+                "description": "Net Value Opening as on",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "15",
+                "field_name": "C_I13",
+                "schedule_reference": "Col. 13",
+                "description": "Net Value Closing as on",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "16",
+                "field_name": "FILLER",
+                "schedule_reference": "-",
+                "description": "Padded with 0 or blank",
+                "type": "",
+                "width": "40"
+            },
+            {
+                "srl_no": "",
+                "field_name": "TOTAL",
+                "schedule_reference": "",
+                "description": "",
+                "type": "",
+                "width": "206"
+            }
+        ]
+    },
+    "BLOCK-D": {
+        "description": "WORKING CAPITAL AND LOANS",
+        "record_identification_key": "AD01 X BLK X D_I1",
+        "fields": [
+            {
+                "srl_no": "1",
+                "field_name": "YR",
+                "schedule_reference": "-",
+                "description": "'23' for ASI 2022-2023",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "2",
+                "field_name": "BLK",
+                "schedule_reference": "-",
+                "description": "Block code, Always 'D'",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "3",
+                "field_name": "AD01",
+                "schedule_reference": "-",
+                "description": "DSL (Block-A, Item 1)",
+                "type": "Character",
+                "width": "6"
+            },
+            {
+                "srl_no": "4",
+                "field_name": "D_I1",
+                "schedule_reference": "Col. 1",
+                "description": "SL. No. (to be entered as printed in the schedule)",
+                "type": "Numeric",
+                "width": "2"
+            },
+            {
+                "srl_no": "5",
+                "field_name": "D_I3",
+                "schedule_reference": "Col. 3",
+                "description": "Opening (Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "6",
+                "field_name": "D_I4",
+                "schedule_reference": "Col. 4",
+                "description": "Closing (Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "7",
+                "field_name": "FILLER",
+                "schedule_reference": "-",
+                "description": "Padded with 0 or blank",
+                "type": "",
+                "width": "166"
+            },
+            {
+                "srl_no": "",
+                "field_name": "TOTAL",
+                "schedule_reference": "",
+                "description": "",
+                "type": "",
+                "width": "206"
+            }
+        ]
+    },
+    "BLOCK-E": {
+        "description": "EMPLOYMENT AND LABOUR COST",
+        "record_identification_key": "AE01 X BLK X E_I1",
+        "fields": [
+            {
+                "srl_no": "2",
+                "field_name": "BLK",
+                "schedule_reference": "-",
+                "description": "Block code, Always 'E'",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "3",
+                "field_name": "AE01",
+                "schedule_reference": "-",
+                "description": "DSL (Block-A, Item 1)",
+                "type": "Character",
+                "width": "6"
+            },
+            {
+                "srl_no": "4",
+                "field_name": "E_I1",
+                "schedule_reference": "Col. 1",
+                "description": "SL. No. (to be entered as printed in the schedule)",
+                "type": "Numeric",
+                "width": "2"
+            },
+            {
+                "srl_no": "5",
+                "field_name": "E_I3",
+                "schedule_reference": "Col. 3",
+                "description": "Mandays Worked (Manufacturing)",
+                "type": "Numeric",
+                "width": "8"
+            },
+            {
+                "srl_no": "6",
+                "field_name": "E_I4",
+                "schedule_reference": "Col. 4",
+                "description": "Mandays Worked (Non Manufacturing)",
+                "type": "Numeric",
+                "width": "8"
+            },
+            {
+                "srl_no": "7",
+                "field_name": "E_I5",
+                "schedule_reference": "Col. 5",
+                "description": "Mandays Worked (Total)",
+                "type": "Numeric",
+                "width": "10"
+            },
+            {
+                "srl_no": "8",
+                "field_name": "E_I6",
+                "schedule_reference": "Col. 6",
+                "description": "Average Number of persons worked",
+                "type": "Numeric",
+                "width": "8"
+            },
+            {
+                "srl_no": "9",
+                "field_name": "E_I7",
+                "schedule_reference": "Col. 7",
+                "description": "No. of mandays paid for",
+                "type": "Numeric",
+                "width": "10"
+            },
+            {
+                "srl_no": "10",
+                "field_name": "E_I8",
+                "schedule_reference": "Col. 8",
+                "description": "Wages/salaries (in Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "11",
+                "field_name": "FILLER",
+                "schedule_reference": "-",
+                "description": "Padded with 0 or blank",
+                "type": "",
+                "width": "136"
+            },
+            {
+                "srl_no": "",
+                "field_name": "TOTAL",
+                "schedule_reference": "",
+                "description": "",
+                "type": "",
+                "width": "206"
+            }
+        ]
+    },
+    "BLOCK-F": {
+        "description": "OTHER EXPENSES",
+        "record_identification_key": "AF01 X BLK",
+        "fields": [
+            {
+                "srl_no": "1",
+                "field_name": "YR",
+                "schedule_reference": "-",
+                "description": "'23' for ASI 2022-2023",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "2",
+                "field_name": "BLK",
+                "schedule_reference": "-",
+                "description": "Block code, Always 'F'",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "3",
+                "field_name": "AF01",
+                "schedule_reference": "-",
+                "description": "DSL (Block-A, Item 1)",
+                "type": "Character",
+                "width": "6"
+            },
+            {
+                "srl_no": "4",
+                "field_name": "F1",
+                "schedule_reference": "Item 1",
+                "description": "Work done by others on materials supplied by the industrial undertaking",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "5",
+                "field_name": "F2A",
+                "schedule_reference": "Item 2 (i)",
+                "description": "Repair & maintenance of Building & Other construction",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "6",
+                "field_name": "F2B",
+                "schedule_reference": "Item 2 (ii)",
+                "description": "Repair & maintenance of Other fixed assets",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "7",
+                "field_name": "F3",
+                "schedule_reference": "Item 3",
+                "description": "Operating expenses",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "8",
+                "field_name": "F4",
+                "schedule_reference": "Item 4",
+                "description": "Expenses on raw materials and other components for own construction",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "9",
+                "field_name": "F5",
+                "schedule_reference": "Item 5",
+                "description": "Insurance Charges",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "10",
+                "field_name": "F6",
+                "schedule_reference": "Item 6",
+                "description": "Rent paid for Plant & Machinery and other Fixed assets",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "11",
+                "field_name": "F7",
+                "schedule_reference": "Item 7",
+                "description": "Expenses on Research & Development (R&D)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "12",
+                "field_name": "F8",
+                "schedule_reference": "Item 8",
+                "description": "Rent paid for Buildings",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "13",
+                "field_name": "F9",
+                "schedule_reference": "Item 9",
+                "description": "Rent paid for land on lease or royalties on mines, quarries and similar assets",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "14",
+                "field_name": "F10",
+                "schedule_reference": "Item 10",
+                "description": "Interest paid",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "15",
+                "field_name": "F11",
+                "schedule_reference": "Item 11",
+                "description": "Purchase value of goods sold in the same condition as purchased",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "16",
+                "field_name": "F12",
+                "schedule_reference": "Item12",
+                "description": "Inward transportation cost",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "17",
+                "field_name": "F13",
+                "schedule_reference": "Item13",
+                "description": "Outward transportation cost",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "18",
+                "field_name": "FILLER",
+                "schedule_reference": "-",
+                "description": "Padded with 0 or blank",
+                "type": "",
+                "width": "0"
+            },
+            {
+                "srl_no": "",
+                "field_name": "TOTAL",
+                "schedule_reference": "",
+                "description": "",
+                "type": "",
+                "width": "206"
+            }
+        ]
+    },
+    "BLOCK-G": {
+        "description": "OTHER OUTPUT/RECEIPTS",
+        "record_identification_key": "AG01 X BLK",
+        "fields": [
+            {
+                "srl_no": "1",
+                "field_name": "YR",
+                "schedule_reference": "-",
+                "description": "'23' for ASI 2022-2023",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "2",
+                "field_name": "BLK",
+                "schedule_reference": "-",
+                "description": "Block code, Always 'G'",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "3",
+                "field_name": "AG01",
+                "schedule_reference": "-",
+                "description": "DSL (Block-A, Item 1)",
+                "type": "Character",
+                "width": "6"
+            },
+            {
+                "srl_no": "4",
+                "field_name": "G1",
+                "schedule_reference": "Item 1",
+                "description": "Receipts from manufacturing services (including work done for others on materials supplied by them and sale value of waste left by the party)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "5",
+                "field_name": "G2",
+                "schedule_reference": "Item 2",
+                "description": "Receipts from non-manufacturing services (including non-industrial services)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "6",
+                "field_name": "G3",
+                "schedule_reference": "Item 3",
+                "description": "Value in electricity generated and sold.",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "7",
+                "field_name": "G4",
+                "schedule_reference": "Item 4",
+                "description": "Value of own construction",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "8",
+                "field_name": "G5",
+                "schedule_reference": "Item 5",
+                "description": "Net balance of goods sold in the same condition as purchased",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "9",
+                "field_name": "G6",
+                "schedule_reference": "Item 6",
+                "description": "Rent received for Plant & Machinery and other fixed assets",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "10",
+                "field_name": "G7",
+                "schedule_reference": "Item 7",
+                "description": "Variation in stock of semi-finished goods",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "11",
+                "field_name": "G8",
+                "schedule_reference": "Item 8",
+                "description": "Rent received for buildings",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "12",
+                "field_name": "G9",
+                "schedule_reference": "Item 9",
+                "description": "Rent received for land on lease or royalties on mines, quarries and similar assets",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "13",
+                "field_name": "G10",
+                "schedule_reference": "Item 10",
+                "description": "Interest received",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "14",
+                "field_name": "G11",
+                "schedule_reference": "Item 11",
+                "description": "Sale value of goods sold in the same condition as purchased",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "15",
+                "field_name": "G12",
+                "schedule_reference": "Item 12",
+                "description": "Other production subsidies",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "16",
+                "field_name": "FILLER",
+                "schedule_reference": "-",
+                "description": "Padded with 0 or blank",
+                "type": "",
+                "width": "28"
+            },
+            {
+                "srl_no": "",
+                "field_name": "TOTAL",
+                "schedule_reference": "",
+                "description": "",
+                "type": "",
+                "width": "206"
+            }
+        ]
+    },
+    "BLOCK-H": {
+        "description": "INPUT ITEMS - Indigenous items consumed",
+        "record_identification_key": "AH01X BLK X H_I1",
+        "fields": [
+            {
+                "srl_no": "1",
+                "field_name": "YR",
+                "schedule_reference": "-",
+                "description": "'23' for ASI 2022-2023",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "2",
+                "field_name": "BLK",
+                "schedule_reference": "-",
+                "description": "Block code, Always 'H'",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "3",
+                "field_name": "AH01",
+                "schedule_reference": "-",
+                "description": "DSL (Block-A, Item 1)",
+                "type": "Character",
+                "width": "6"
+            },
+            {
+                "srl_no": "4",
+                "field_name": "H_I1",
+                "schedule_reference": "Col. 1",
+                "description": "SL. No. (to be entered as printed in the schedule)",
+                "type": "Numeric",
+                "width": "3"
+            },
+            {
+                "srl_no": "5",
+                "field_name": "H_I3",
+                "schedule_reference": "Col. 3",
+                "description": "Item code (NPCMS)",
+                "type": "Character",
+                "width": "7"
+            },
+            {
+                "srl_no": "6",
+                "field_name": "H_I4",
+                "schedule_reference": "Col. 4",
+                "description": "Unit of quantity (code)",
+                "type": "Numeric",
+                "width": "3"
+            },
+            {
+                "srl_no": "7",
+                "field_name": "H_I5",
+                "schedule_reference": "Col. 5",
+                "description": "Quantity consumed (99999999999.99)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "8",
+                "field_name": "H_I6",
+                "schedule_reference": "Col. 6",
+                "description": "Purchase value (in Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "9",
+                "field_name": "H_I7",
+                "schedule_reference": "Col. 7",
+                "description": "Rate per unit (in Rs.) (99999999999.99)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "10",
+                "field_name": "FILLER",
+                "schedule_reference": "-",
+                "description": "Padded with 0 or blank",
+                "type": "",
+                "width": "141"
+            },
+            {
+                "srl_no": "",
+                "field_name": "TOTAL",
+                "schedule_reference": "",
+                "description": "",
+                "type": "",
+                "width": "206"
+            }
+        ]
+    },
+    "BLOCK-I": {
+        "description": "INPUT ITEMS - Directly imported items only (consumed",
+        "record_identification_key": "AI01 X BLK X I_I1",
+        "fields": [
+            {
+                "srl_no": "1",
+                "field_name": "YR",
+                "schedule_reference": "-",
+                "description": "'23' for ASI 2022-2023",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "2",
+                "field_name": "BLK",
+                "schedule_reference": "-",
+                "description": "Block code, Always 'I'",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "3",
+                "field_name": "AI01",
+                "schedule_reference": "-",
+                "description": "DSL (Block-A, Item 1)",
+                "type": "Character",
+                "width": "6"
+            },
+            {
+                "srl_no": "4",
+                "field_name": "I_I1",
+                "schedule_reference": "Col. 1",
+                "description": "SL. No. (to be entered as printed in the schedule)",
+                "type": "Numeric",
+                "width": "2"
+            },
+            {
+                "srl_no": "5",
+                "field_name": "I_I3",
+                "schedule_reference": "Col. 3",
+                "description": "Item code (NPCMS)",
+                "type": "Character",
+                "width": "7"
+            },
+            {
+                "srl_no": "6",
+                "field_name": "I_I4",
+                "schedule_reference": "Col. 4",
+                "description": "Unit of quantity (code)",
+                "type": "Numeric",
+                "width": "3"
+            },
+            {
+                "srl_no": "7",
+                "field_name": "I_I5",
+                "schedule_reference": "Col. 5",
+                "description": "Quantity consumed (99999999999.99)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "8",
+                "field_name": "I_I6",
+                "schedule_reference": "Col. 6",
+                "description": "Purchase value (in Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "9",
+                "field_name": "I_I7",
+                "schedule_reference": "Col. 7",
+                "description": "Rate per unit (in Rs.) (99999999999.99)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "10",
+                "field_name": "FILLER",
+                "schedule_reference": "-",
+                "description": "Padded with 0 or blank",
+                "type": "",
+                "width": "142"
+            },
+            {
+                "srl_no": "",
+                "field_name": "TOTAL",
+                "schedule_reference": "",
+                "description": "",
+                "type": "",
+                "width": "206"
+            }
+        ]
+    },
+    "BLOCK-J": {
+        "description": "PRODUCTS AND BY-PRODUCTS (Manufactured by the unit",
+        "record_identification_key": "AJ01 X BLK X J_I1",
+        "fields": [
+            {
+                "srl_no": "1",
+                "field_name": "YR",
+                "schedule_reference": "-",
+                "description": "'23' for ASI 2022-2023",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "2",
+                "field_name": "BLK",
+                "schedule_reference": "-",
+                "description": "Block code, Always 'J'",
+                "type": "Character",
+                "width": "2"
+            },
+            {
+                "srl_no": "3",
+                "field_name": "AJ01",
+                "schedule_reference": "-",
+                "description": "DSL (Block-A, Item 1)",
+                "type": "Character",
+                "width": "6"
+            },
+            {
+                "srl_no": "4",
+                "field_name": "J_I1",
+                "schedule_reference": "Col. 1",
+                "description": "SL. No. (to be entered as printed in the schedule)",
+                "type": "Numeric",
+                "width": "3"
+            },
+            {
+                "srl_no": "5",
+                "field_name": "J_I3",
+                "schedule_reference": "Col. 3",
+                "description": "Item code (NPCMS)",
+                "type": "Character",
+                "width": "7"
+            },
+            {
+                "srl_no": "6",
+                "field_name": "J_I4",
+                "schedule_reference": "Col. 4",
+                "description": "Unit of quantity (code)",
+                "type": "Numeric",
+                "width": "2"
+            },
+            {
+                "srl_no": "7",
+                "field_name": "J_I5",
+                "schedule_reference": "Col. 5",
+                "description": "Quantity manufactured (99999999999.99)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "8",
+                "field_name": "J_I6",
+                "schedule_reference": "Col. 6",
+                "description": "Quantity sold (99999999999.99)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "9",
+                "field_name": "J_I7",
+                "schedule_reference": "Col. 7",
+                "description": "Gross sale value (Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "10",
+                "field_name": "J_I8",
+                "schedule_reference": "Col. 8",
+                "description": "Goods and Services Tax (GST) (Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "11",
+                "field_name": "J_I9",
+                "schedule_reference": "Col. 9",
+                "description": "Excise Duty/ Sales Tax/VAT/ Other Taxes, if any (Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "12",
+                "field_name": "J_I10",
+                "schedule_reference": "Col. 10",
+                "description": "Others (Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "13",
+                "field_name": "J_I11",
+                "schedule_reference": "Col. 11",
+                "description": "Subsidy (Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "14",
+                "field_name": "J_I12",
+                "schedule_reference": "Col. 12",
+                "description": "Per unit net sale value (Rs.) (99999999999.99)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "15",
+                "field_name": "J_I13",
+                "schedule_reference": "Col. 13",
+                "description": "Ex-factory value of quantity manufactured (Rs.)",
+                "type": "Numeric",
+                "width": "14"
+            },
+            {
+                "srl_no": "16",
+                "field_name": "FILLER",
+                "schedule_reference": "-",
+                "description": "Padded with 0 or blank",
+                "type": "",
+                "width": "58"
+            },
+            {
+                "srl_no": "",
+                "field_name": "TOTAL",
+                "schedule_reference": "",
+                "description": "",
+                "type": "",
+                "width": "206"
+            }
+        ]
+    }
+}

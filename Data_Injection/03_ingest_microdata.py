@@ -5,10 +5,9 @@ from psycopg2.extras import execute_values
 import os
 import sys
 
-# --- Database Connection Configuration ---
 DB_HOST = "localhost"
-DB_NAME = "statathon" # Ensure this matches your PostgreSQL database name
-DB_USER = "postgres"  # Your PostgreSQL username
+DB_NAME = "statathon" 
+DB_USER = "postgres" 
 DB_PASSWORD = "Suraj@#6708"
 
 # --- Microdata CSV Files Configuration ---
