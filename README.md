@@ -1,139 +1,83 @@
-# MoSPI Microdata API Gateway & Data Injection
+### Automated Data Dissemination Gateway for MoSPI Microdata
 
-This project provides a Node.js API gateway for accessing microdata from surveys, along with Python scripts for preparing and injecting survey metadata and microdata into a PostgreSQL database.
+### 💡 Project Overview
 
-## Project Structure
+This project proposes and details a solution for building an **Automated Data Dissemination Gateway** to modernize how the Ministry of Statistics and Programme Implementation (MoSPI) provides access to its vast collection of microdata. The solution transitions from a manual, file-based system to an intelligent, API-driven platform, aligning with MoSPI's vision for "Statistics-as-a-Service" and India's Digital Public Infrastructure (DPI).
 
-```
-blank/
-├── Data_Injection/
-│   ├── 01_prepare_metadata_from_csv.py
-│   ├── 02_ingest_metadata.py
-│   ├── 03_ingest_microdata.py
-│   ├── annualSurvey_all_levels_structured_metadata.json
-│   ├── hces_microdata_csvs/
-│   │   └── blkC202223.CSV
-│   ├── Layout_HCES 2023-24(1).xlsx
-│   ├── prepare_all_metadata.py
-│   ├── survey.sql
-│   └── XlsmToJson.py
-├── mospi-api-gateway/
-│   ├── app.js
-│   ├── config/
-│   │   └── db.js
-│   ├── controllers/
-│   │   ├── dataController.js
-│   │   └── surveyController.js
-│   ├── db/
-│   │   └── index.js
-│   ├── package.json
-│   ├── package-lock.json
-│   ├── routes/
-│   │   ├── data.js
-│   │   └── surveys.js
-│   ├── services/
-│   │   ├── dataService.js
-│   │   └── surveyService.js
-├── texttocsv/
-│   └── LEVEL - 05 ( Sec 5 & 6).txt
-└── README.md
-```
+### 🎯 Problem Statement
 
-## Components
+MoSPI's current system for data dissemination is challenged by a lack of a unified, searchable platform. The data is heterogeneous, with each of the 170+ surveys having a unique structure, requiring manual file downloads and complex processing. This leads to slow "time-to-insight" for researchers and policymakers and creates a barrier to equitable data access. The solution must address these issues while strictly adhering to data privacy and security policies.
 
-### 1. Data_Injection (Python)
+***
 
-Scripts and resources for preparing, transforming, and injecting survey metadata and microdata into the database.
+### 🚀 Proposed Solution
 
-- **01_prepare_metadata_from_csv.py**: Prepares metadata from CSV files.
-- **02_ingest_metadata.py**: Loads metadata into the database.
-- **03_ingest_microdata.py**: Loads microdata into the database.
-- **prepare_all_metadata.py**: Batch metadata preparation.
-- **survey.sql**: SQL schema for the survey database.
-- **annualSurvey_all_levels_structured_metadata.json**: Example structured metadata.
-- **hces_microdata_csvs/**: Example microdata CSVs.
-- **Layout_HCES 2023-24(1).xlsx**: Survey layout reference.
-- **XlsmToJson.py**: Converts Excel macro files to JSON.
+The core of the solution is an API Gateway that acts as a secure and intelligent interface between users and MoSPI's microdata. The system is built on a metadata-driven architecture to handle all surveys dynamically. 
 
-### 2. mospi-api-gateway (Node.js)
+1.  **Unified Data Architecture:** Ingest over 170 diverse surveys into a single PostgreSQL database. The system uses metadata to dynamically define a flexible schema, handling data heterogeneity without manual intervention for each new survey.
 
-Express.js API server for querying survey metadata and microdata from PostgreSQL.
+2.  **Automated Ingestion Pipeline:** An automated pipeline will parse metadata, transform raw microdata into a unified JSONB format, and bulk-load it. This eliminates manual effort and ensures scalability as new survey rounds are released.
 
-- **app.js**: Main application entry point.
-- **config/db.js**: Database connection configuration.
-- **db/index.js**: PostgreSQL client and query helper.
-- **controllers/**: Route handler logic for surveys and data.
-- **routes/**: Express route definitions for API endpoints.
-- **services/**: Database query logic for surveys and microdata.
-- **package.json / package-lock.json**: Node.js dependencies.
+3.  **Smart, Privacy-Preserving API Layer:** A RESTful API dynamically generates SQL queries based on user requests. It uses metadata to infer data levels and link records across surveys, while programmatically enforcing privacy measures like cell suppression to prevent re-identification.
 
-### 3. texttocsv
+4.  **Equitable Access with Role-Based Control:** The API provides tiered access for different user roles—from public users to researchers—ensuring everyone can access data at the appropriate level of granularity while maintaining compliance.
 
-Contains text files for conversion or reference.
+5.  **Alignment with Global Standards:** The project modernizes data dissemination and aligns with the UN's Fundamental Principles of Official Statistics, mirroring successful international examples like the Eurostat API.
 
-## Setup Instructions
+***
 
-### Python (Data Injection)
+### ⚙️ Core Technical Flow
 
-1. Install dependencies (if any):
-   ```bash
-   pip install -r requirements.txt  # if requirements.txt exists
-   ```
-2. Configure your database connection in the scripts or via environment variables.
-3. Run the scripts in order to prepare and inject data:
-   ```bash
-   python Data_Injection/01_prepare_metadata_from_csv.py
-   python Data_Injection/02_ingest_metadata.py
-   python Data_Injection/03_ingest_microdata.py
-   ```
+The project consists of three main components: Automated Ingestion, the Database, and the API Gateway.
 
-### Node.js (API Gateway)
+#### 1. Automated Ingestion Pipeline
+This process is designed to handle the thousands of microdata files and their unique metadata efficiently.
 
-1. Install dependencies:
-   ```bash
-   cd mospi-api-gateway
-   npm install
-   ```
-2. Create a `.env` file in `mospi-api-gateway/` with your PostgreSQL credentials:
-   ```ini
-   DB_USER=your_db_user
-   DB_PASSWORD=your_db_password
-   DB_HOST=localhost
-   DB_NAME=your_db_name
-   PORT=3000
-   NODE_ENV=development
-   ```
-3. Start the API server:
-   ```bash
-   node app.js
-   ```
 
-## Database Setup
 
-- Use the `survey.sql` file in `Data_Injection/` to create the necessary tables in your PostgreSQL database.
-- Make sure your database is running and accessible to both the Python scripts and the Node.js API.
+-   **Data Sources:** Raw microdata files (text/CSV) and metadata documents (XLSX, PDF) are the primary inputs.
+-   **Metadata Processing:** An automated process extracts and converts metadata into a structured JSON format, which is then stored in a PostgreSQL database in tables like `surveys` and `survey_levels`.
+-   **Microdata Processing:** The pipeline uses the stored metadata schemas to dynamically process microdata files, format the data into a JSONB `data_payload`, and bulk-load it into a `survey_data` table.
 
-## API Usage
+#### 2. API Gateway & Query Processing
 
-### Endpoints
+This is the front-facing component that handles all user requests.
 
-- `GET /api/v1/surveys` — List all available surveys
-- `GET /api/v1/surveys/:surveyId/levels` — List levels for a specific survey
-- `GET /api/v1/data/:surveyId/:levelId?page=1&limit=10&filter={"Age":{">":25}}` — Retrieve paginated, filterable microdata
-- `GET /api/v1/data/:surveyId/:levelId/:unitIdentifier` — Retrieve a single microdata record by unit identifier
 
-### Example Request
 
-```bash
-curl "http://localhost:3000/api/v1/data/1/2?page=1&limit=5&filter={\"Age\":{\">\":25}}"
-```
+-   **User Query:** A user submits a query to the API (e.g., `/api/hces/data?state=MH&item=Cereals`).
+-   **API Backend:** The backend dynamically generates a SQL query by referencing the metadata to infer which levels and variables are needed.
+-   **Dynamic SQL Execution:** The dynamically built SQL query is executed against the database.
+-   **Privacy & Formatting:** The retrieved raw aggregated data is then processed to enforce privacy rules (e.g., cell suppression) and formatted into a user-friendly JSON or CSV output.
 
-## Troubleshooting
+***
 
-- **Database connection errors**: Ensure your `.env` file has the correct credentials and your database is running.
-- **Line ending warnings**: These are normal on Windows. See `.gitattributes` for configuration.
-- **Submodule errors**: If you see errors about submodules, check for a `.gitmodules` file or `.git` directories inside subfolders.
+### 🛠️ Tech Stack
 
-## License
+-   **Core Database:** PostgreSQL (with JSONB support)
+-   **Backend Language & Framework:** Python (FastAPI / Flask)
+-   **Data Processing:** Pandas, custom Python parsers
+-   **API Management:** Nginx / Envoy (as API Gateway)
+-   **Security:** OAuth2 / API Keys (for authentication)
+-   **Deployment:** Docker & Kubernetes
+-   **Monitoring:** Prometheus, Grafana
+-   **Documentation:** OpenAPI / Swagger
 
-MIT or as specified by project owner.
+***
+
+### 📚 References & Research
+
+-   **Official MoSPI Guidelines & Principles:**
+    -   Draft Revised Guidelines for Statistical Data Dissemination (GSDD): [https://www.mospi.gov.in/sites/default/files/Draft-Revised_GSDD_02012025.pdf](https://www.mospi.gov.in/sites/default/files/Draft-Revised_GSDD_02012025.pdf)
+    -   MoSPI Guidelines for National Data Sharing and Accessibility Policy (NDSAP): [https://mospi.gov.in/sites/default/files/announcements/Guidelines_NDSAP.pdf](https://mospi.gov.in/sites/default/files/announcements/Guidelines_NDSAP.pdf)
+-   **Foundational Principles of Official Statistics:**
+    -   UN Fundamental Principles of Official Statistics: [https://digitallibrary.un.org/record/766579](https://digitallibrary.un.org/record/766579)
+-   **Global Examples of Statistical APIs:**
+    -   EurostatAPI.jl Documentation (demonstrates programmatic access to European official statistics): [https://ribo.pages.nilu.no/EurostatAPI.jl](https://ribo.pages.nilu.no/EurostatAPI.jl)
+
+***
+
+### 🎥 Demo & Further Reading
+
+-   **Video Demo:** [Link to a video demonstrating the API in action]
+-   **Project Documentation:** [Link to a more detailed project document, if available]
