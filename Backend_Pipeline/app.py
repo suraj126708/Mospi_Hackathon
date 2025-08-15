@@ -126,10 +126,10 @@ def run_pipeline(pdf_filename, csv_filename):
         
         pipeline_status['progress'] = 85
         
-        # Step 4: Ingest microdata
+        # Step 4: Ingest microdata (Ultra-Fast)
         pipeline_status['progress'] = 95
-        if not run_pipeline_step("Microdata Ingestion", "python 03_ingest_microdata.py", "../Data_Injection"):
-            pipeline_status['error'] = "Microdata ingestion failed"
+        if not run_pipeline_step("Ultra-Fast Microdata Ingestion", "python ultra_fast_microdata.py", "."):
+            pipeline_status['error'] = "Ultra-fast microdata ingestion failed"
             return
         
         pipeline_status['progress'] = 100
@@ -162,11 +162,11 @@ def health():
 
 @app.route('/test-microdata')
 def test_microdata():
-    """Test the microdata ingestion script directly"""
+    """Test the ultra-fast microdata ingestion script directly"""
     try:
         result = subprocess.run(
-            "python 03_ingest_microdata.py",
-            cwd="../Data_Injection",
+            "python ultra_fast_microdata.py",
+            cwd=".",
             capture_output=True,
             text=True,
             shell=True
