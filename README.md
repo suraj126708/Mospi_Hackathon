@@ -1,6 +1,6 @@
 ### 🎥 Demo Video and images
 
--   **Video and images of Demo:** [[Link to a video demonstrating the API in action]](https://drive.google.com/drive/folders/1pCeGmJAZsiBxW6bixIuVurzPKDC35RVU?usp=sharing)
+-   **Video and images of Demo:** [[Link]](https://drive.google.com/drive/folders/1pCeGmJAZsiBxW6bixIuVurzPKDC35RVU?usp=sharing)
 
 *** 
 
